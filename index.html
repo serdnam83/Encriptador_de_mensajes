@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes personalizadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Neucha&family=Space+Grotesk&display=swap"
+        rel="stylesheet">
+    <!-- CSS para resetear los estilos que impone el navegador-->
+    <link rel="stylesheet" href="Css/reset.css">
+    <link rel="stylesheet" href="Css/styles.css">
+    <title>Encriptador Challenge1 ORACLE ONE-ALURA</title>
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="/img/logoRW.png">
+        <h1>ENCRIPTADOR DE MENSAJES</h1>
+    </header>
+
+    <main class="main">
+
+        <section class="box box_message">
+
+            <div class="text_area input">
+                <textarea class="message" id="entrada" style="resize: none;" placeholder="Escribe tu mensaje aquí"></textarea>
+            </div>
+
+            <div class="controls">
+                <input type="button" class="button" id="encriptar" value="Encriptar">                
+                <input type="button" class="button" id="desencriptar" value="Desencriptar">
+            </div>
+
+        </section>
+
+        <section class="box box_salida">
+
+            <div class="text_area out">
+                <textarea name="textarea" class="invisible" id="salida" cols="30" rows="10" style="resize: none;"></textarea>
+                <h2 class="texto_imagen">No se encontro ningun texto</h2>
+                <img src="/img/pngwing.com.png" alt="un detective con lupa" class="imagen">                
+            </div>
+
+            <div class="controls">
+                <input type="button" class="button" id="copiar" value="Copiar">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="/Java/main.js"></script>
+    <script src="/Java/encriptar.js"></script>
+    <script src="/Java/desencriptar.js"></script>       
+
+</body>
+
+</html>
